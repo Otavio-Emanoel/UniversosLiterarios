@@ -1,0 +1,14 @@
+Estamos criando uma pagina em nextjs e tailwind, esta pagina deve ter um design moderno e que relembre à literatura, sendo que vai servir como uma especie de formulário, sendo que, vai servir como maneira de divulgar os conteudos ensinados no componente de Lingua portuguesa e literatura na etec de peruibe. Os temas abordados serão:
+- Os Eternos/ O quarto Mundo (Jack Kirby)
+- O silmarillion (Tolkien)
+- Discworld (Terry Pratchet)
+- Sandman (The endless) Neil Gaiman
+- Os mitos de cthullu (HP.Lovecraft)
+- Stephen King
+- Elric (o conceito do guerreiro eterno) Michael Moorcock
+- Conan e a era Hiboriana (Robert E Howard)
+- Duna (frank herbert)
+- Alice, Dorolthy e Wendy (Carroll, Bayn e Barrie)
+
+O sistema deve se iniciar em uma landing page bem simples com todos os temas e breves explicações e imagens sobre. Contendo também um botão de iniciar (poderá ter um campo para o usuario colocar o nome dele), ao clicar neste botão, seremos redirecionados à tela do primeiro tema, sendo ele Os eternos, nesta tela, vai conter uma temática desse tema, com tambem um botão de iniciar, que ao clicar nele, irá para a tela de pergunta, onde vai ter a primeira pergunta, e as 5 alternativas, ao selecionar a alternativa e confirmar, a tela terá um retorno visual se estiver correta ou certa e exibira o botão para avançar, ao finalizar todas as 5 perguntas do tema (cada tema tem 5 perguntas), você podera avancar para o proximo tema, com a nova temática deste tema. Após completar todos os 10 temas, o usuario sera redirecionado para a tela de resultados, onde exibirá quantas perguntas o usuario acertou de cada tema e no geral. Ao fim desta pagina, irá conter o link para um formulário do google forms de uma pesquisa de campo.
+É muito importante que cada pagina seja estilizada conforme o seu tema.
