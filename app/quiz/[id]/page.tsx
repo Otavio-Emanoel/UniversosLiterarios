@@ -11,6 +11,16 @@ export default function QuizPage() {
   const themeId = Number.parseInt(params.id as string)
   const theme = themes[themeId]
 
+  const backgroundStyle = theme?.coverImage
+    ? {
+        backgroundColor: theme.colors.background,
+        backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${theme.coverImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }
+    : { backgroundColor: theme?.colors.background }
+
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
   const [showFeedback, setShowFeedback] = useState(false)
@@ -63,7 +73,7 @@ export default function QuizPage() {
   const progress = ((currentQuestion + 1) / theme.questions.length) * 100
 
   return (
-    <main className="min-h-screen py-12 px-4" style={{ backgroundColor: theme.colors.background }}>
+    <main className="min-h-screen py-12 px-4" style={backgroundStyle}>
       <div className="max-w-2xl mx-auto">
         {/* Progress Bar */}
         <div className="mb-8">
