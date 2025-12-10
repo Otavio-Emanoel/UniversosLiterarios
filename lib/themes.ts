@@ -75,7 +75,7 @@ export const themes: ThemeConfig[] = [
     title: "O Silmarillion",
     description: "A épica mitologia da Terra-média antes do Senhor dos Anéis",
     author: "J.R.R. Tolkien",
-    coverImage: "/o-silmarillion.jpg",
+    coverImage: "/o-silmarillion-capa.jpg",
     tags: ["Fantasia", "Mitologia Épica"],
     colors: {
       primary: "#2E7D32",
@@ -117,7 +117,7 @@ export const themes: ThemeConfig[] = [
     title: "Discworld",
     description: "Um mundo de fantasia cômico e absurdo em um disco mágico",
     author: "Terry Pratchett",
-    coverImage: "/discworld.webp",
+    coverImage: "/discworld-capa.jpg",
     tags: ["Comédia", "Fantasia", "Aventura"],
     colors: {
       primary: "#8B4513",
@@ -159,7 +159,7 @@ export const themes: ThemeConfig[] = [
     title: "Sandman",
     description: "Os Perpétuos: Sete seres antigos que personificam conceitos universais",
     author: "Neil Gaiman",
-    coverImage: "/sandman.webp",
+    coverImage: "/sandman-capa.webp",
     tags: ["Fantasia Sombria", "Sobrenatural"],
     colors: {
       primary: "#4A148C",
@@ -201,7 +201,7 @@ export const themes: ThemeConfig[] = [
     title: "Os Mitos de Cthulhu",
     description: "Horrores cósmicos além da compreensão humana",
     author: "H.P. Lovecraft",
-    coverImage: "/os-mitos-de-cthulhu.jpg",
+    coverImage: "/cthulhu-capa.webp",
     tags: ["Horror Cósmico", "Mistério"],
     colors: {
       primary: "#0D47A1",
@@ -261,7 +261,7 @@ export const themes: ThemeConfig[] = [
     title: "Stephen King",
     description: "O Mestre da Literatura de Horror contemporâneo",
     author: "Stephen King",
-    coverImage: "/stephen-king.jpg",
+    coverImage: "/stephen-king-capa.jpg",
     tags: ["Horror", "Thriller Psicológico"],
     colors: {
       primary: "#8B0000",
@@ -303,7 +303,7 @@ export const themes: ThemeConfig[] = [
     title: "Elric",
     description: "O Guerreiro Eterno e sua espada maldita",
     author: "Michael Moorcock",
-    coverImage: "/elric.jpg",
+    coverImage: "/elric-capa.png",
     tags: ["Ficção Científica", "Fantasia Épica"],
     colors: {
       primary: "#D81B60",
@@ -351,7 +351,7 @@ export const themes: ThemeConfig[] = [
     title: "Conan",
     description: "O Bárbaro das Terras Selvagens e seus esplêndidos feitos",
     author: "Robert E. Howard",
-    coverImage: "/conan.jfif",
+    coverImage: "/conan-capa.jpg",
     tags: ["Ficção Heroica", "Aventura"],
     colors: {
       primary: "#B8860B",
@@ -393,7 +393,7 @@ export const themes: ThemeConfig[] = [
     title: "Duna",
     description: "Um universo de política, religião e controle de recursos",
     author: "Frank Herbert",
-    coverImage: "/duna.jpg",
+    coverImage: "/duna-capa.jpg",
     tags: ["Ficção Científica Épica", "Política"],
     colors: {
       primary: "#D4A574",
@@ -441,7 +441,7 @@ export const themes: ThemeConfig[] = [
     title: "Alice, Dorothy e Wendy",
     description: "As Heroínas que adentraram Mundos Extraordinários",
     author: "Carroll, Bayn e Barrie",
-    coverImage: "/alice-dorothy-wendy.jpg",
+    coverImage: "/alice-dorothy-wendy-capa.jpg",
     tags: ["Clássicos da Literatura", "Aventura Fantástica"],
     colors: {
       primary: "#E91E63",
