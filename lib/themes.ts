@@ -272,28 +272,56 @@ export const themes: ThemeConfig[] = [
     },
     questions: [
       {
-        question: "Qual é a obra mais famosa de Stephen King?",
-        alternatives: ["It", "The Shining", "Carrie", "O Iluminado", "Misery"],
-        correct: 0,
-      },
-      {
-        question: "Em qual livro um ator fica isolado em um hotel no inverno?",
-        alternatives: ["Carrie", "The Shining", "It", "Misery", "The Stand"],
+        question:
+          "(Carrie) Qual é o poder especial de Carrie White que desencadeia os eventos centrais da história?",
+        alternatives: [
+          "Telepatia — ela lê mentes.",
+          "Telecinésia — ela move objetos com a mente.",
+          "Invisibilidade — ela some em momentos de raiva.",
+          "Viagem no tempo — ela revive eventos passados.",
+          "Controle do clima — ela manipula tempestades.",
+        ],
         correct: 1,
       },
       {
-        question: "Qual cidade fictícia aparece frequentemente em King's works?",
-        alternatives: ["Derry", "Castle Rock", "Jerusalem's Lot", "Todas acima", "Nenhuma delas"],
-        correct: 3,
+        question:
+          "(O Nevoeiro) Por que os personagens decidem queimar o carro antes de fugir da loja de conveniência?",
+        alternatives: [
+          "Para sinalizar para reforços da polícia.",
+          "Para evitar que o carro exploda sozinho com os monstros se aproximando.",
+          "Para eliminar o cheiro e não atrair os monstros.",
+          "Para iluminar a saída através da neblina.",
+          "Para evitar que monstros usem o carro como esconderijo.",
+        ],
+        correct: 2,
       },
       {
-        question: "Quantos livros Stephen King publicou aproximadamente?",
-        alternatives: ["25", "40", "60", "80", "100+"],
-        correct: 4,
+        question: "(It – A Coisa) Qual é o verdadeiro nome do palhaço maligno que aterroriza Derry?",
+        alternatives: ["Pennywise.", "Bob Gray.", "Derry the Clown.", "Georgie Denbrough.", "It — ele não tem outro nome."],
+        correct: 0,
       },
       {
-        question: "Qual é o pseudônimo usado por Stephen King?",
-        alternatives: ["Stanley Kubrick", "Richard Bachman", "James Herbert", "Dean Koontz", "Clive Barker"],
+        question:
+          "(O Iluminado) No hotel Overlook, qual é o don (habilidade psíquica) especial do menino Danny Torrance?",
+        alternatives: [
+          "Clarividência — ver acontecimentos futuros.",
+          "Teletransporte — mover-se de um lugar a outro instantaneamente.",
+          "“O Brilho” — perceber memórias e presenças de espíritos.",
+          "Invisibilidade — tornar-se invisível às entidades do hotel.",
+          "Comunicação com animais — falar com os espíritos do hotel.",
+        ],
+        correct: 2,
+      },
+      {
+        question:
+          "(A Torre Negra) Qual é a missão principal do pistoleiro Roland Deschain?",
+        alternatives: [
+          "Destruir um império corrupto.",
+          "Encontrar e alcançar a misteriosa Torre Negra, que sustenta todos os universos.",
+          "Salvar a humanidade de uma praga sobrenatural.",
+          "Impedir a ascensão de um mago maligno chamado Randall Flagg.",
+          "Derrotar monstros que ameaçam seu próprio mundo.",
+        ],
         correct: 1,
       },
     ],
@@ -404,35 +432,34 @@ export const themes: ThemeConfig[] = [
     },
     questions: [
       {
-        question: "Qual é o planeta principal em Duna?",
-        alternatives: ["Caladan", "Duna", "Giedi Prime", "Kaitain", "Carthag"],
+        question:
+          "(Duna) Qual é a substância mais valiosa do universo de Duna, essencial para viagens espaciais e prolongar a vida?",
+        alternatives: ["Água da Vida.", "Especiaria (Melange).", "Slep.", "Sapho.", "Spice gas."],
         correct: 1,
       },
       {
-        question: "O que é a Melange?",
-        alternatives: [
-          "Uma especiaria",
-          "Uma droga que aumenta a longevidade e percepção",
-          "Um recurso precioso",
-          "Todas acima",
-          "Apenas A e C",
-        ],
-        correct: 3,
+        question:
+          "(Duna) Quem é a ordem secreta de mulheres altamente treinadas, com memória ancestral e controle corporal?",
+        alternatives: ["Os Fremen.", "A Casa Harkonnen.", "A Irmandade Bene Gesserit.", "A Guilda Espaço-Tempo.", "Os Sardaukar."],
+        correct: 2,
       },
       {
-        question: "Qual é o nome do protagonista principal?",
-        alternatives: ["Paul Atreides", "Leto Atreides", "Feyd-Rautha", "Baron Harkonnen", "Thufir Hawat"],
+        question:
+          "(Duna) Qual título aristocrático ergue a família principal de protagonistas no começo da história, governando Arrakis?",
+        alternatives: ["Duque.", "Barão.", "Conde.", "Visconde.", "Príncipe."],
         correct: 0,
       },
       {
-        question: "Qual é a Casa Nobre rival dos Atreides?",
-        alternatives: ["Casa Corrino", "Casa Harkonnen", "Casa Ecaz", "Casa Moritani", "Casa Thorium"],
-        correct: 1,
+        question:
+          "(Duna) Qual criatura gigantesca vital para o ecossistema de Arrakis produz a especiaria?",
+        alternatives: ["O Verme-da-Areia (Shai-Hulud).", "O Grue.", "As Ostras de Melange.", "O Sand-Caterpillar.", "A Larva Spice."],
+        correct: 0,
       },
       {
-        question: "Em qual ano Frank Herbert publicou Duna?",
-        alternatives: ["1955", "1960", "1965", "1970", "1975"],
-        correct: 2,
+        question:
+          "(Duna) Qual é o nome profetizado pelas Bene Gesserit para o ser capaz de ver passado e futuro?",
+        alternatives: ["Kwisatz Haderach.", "Muad’Dib.", "Lisan al Gaib.", "A Voz do Deserto.", "Usul."],
+        correct: 0,
       },
     ],
   },
