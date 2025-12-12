@@ -212,47 +212,32 @@ export const themes: ThemeConfig[] = [
     },
     questions: [
       {
-        question: "Quem ou o que é Cthulhu?",
-        alternatives: [
-          "Um Deus maior",
-          "Uma entidade cósmica",
-          "Um alienígena",
-          "Uma criatura do abismo",
-          "Todas as opções acima",
-        ],
-        correct: 4,
-      },
-      {
-        question: "Onde Cthulhu dorme?",
-        alternatives: [
-          "Na Montanha do Louco",
-          "Na Cidade R'lyeh",
-          "No Necronomicon",
-          "No Vácuo do Espaço",
-          "Na Dimensão Perdida",
-        ],
-        correct: 1,
-      },
-      {
-        question: "O que é o Necronomicon?",
-        alternatives: [
-          "Um grimório mágico",
-          "Um livro de conhecimento proibido",
-          "Uma cidade antiga",
-          "Uma entidade cósmica",
-          "Uma civilização perdida",
-        ],
-        correct: 1,
-      },
-      {
-        question: "Qual é o efeito de ver diretamente uma entidade de Lovecraft?",
-        alternatives: ["Morte instantânea", "Mutação", "Loucura", "Escravidão mental", "Imortalidade forçada"],
+        question: "Qual é o nome do 'Deus Cego e Idiota' que reside no centro do universo?",
+        alternatives: ["Cthulhu", "Yog-Sothoth", "Azathoth", "Hastur"],
         correct: 2,
       },
       {
-        question: "Em qual época Lovecraft começou a publicar seus contos?",
-        alternatives: ["Anos 1900", "Anos 1910", "Anos 1920", "Anos 1930", "Anos 1940"],
-        correct: 2,
+        question: "Qual Deusa Exterior é conhecida como 'A Cabra Negra dos Bosques com Milhares de Cria'?",
+        alternatives: ["Yig", "Shub-Niggurath", "Bast", "Ghatanothoa"],
+        correct: 1,
+      },
+      {
+        question:
+          "Qual é a cidade portuária no Plano Onírico, conhecida por seus mercados, em 'A Busca Onírica de Kadath'?",
+        alternatives: ["Ulthar", "Celephaïs", "Dylath-Leen", "Arkham"],
+        correct: 1,
+      },
+      {
+        question:
+          "Em qual conto Lovecraft introduziu o Grande Antigo Cthulhu e a cidade submersa de R'lyeh?",
+        alternatives: ["Nas Montanhas da Loucura", "O Chamado de Cthulhu", "A Sombra Sobre Innsmouth", "O Horror de Dunwich"],
+        correct: 1,
+      },
+      {
+        question:
+          "Qual Deusa Exterior é associada à chave e ao portal, existindo simultaneamente em todos os tempos e espaços?",
+        alternatives: ["Azathoth", "Yog-Sothoth", "Cthulhu", "Dagon"],
+        correct: 1,
       },
     ],
   },
