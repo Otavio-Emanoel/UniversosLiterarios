@@ -18,7 +18,7 @@ export default function ThemePage() {
   const backgroundStyle = theme?.coverImage
     ? {
         backgroundColor: theme.colors.background,
-        backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(${theme.coverImage})`,
+        backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.78)), url(${theme.coverImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -44,7 +44,7 @@ export default function ThemePage() {
 
   return (
     <main className="min-h-screen py-12 px-4" style={backgroundStyle}>
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto animate-[fadeIn_0.6s_ease-out]">
         <div className="flex items-center justify-between mb-8 text-sm" style={{ color: theme.colors.secondary }}>
           <button onClick={handleBack} className="hover:underline">
             ← Voltar

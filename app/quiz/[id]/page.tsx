@@ -14,7 +14,7 @@ export default function QuizPage() {
   const backgroundStyle = theme?.coverImage
     ? {
         backgroundColor: theme.colors.background,
-        backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${theme.coverImage})`,
+        backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)), url(${theme.coverImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -74,18 +74,35 @@ export default function QuizPage() {
 
   return (
     <main className="min-h-screen py-12 px-4" style={backgroundStyle}>
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl mx-auto space-y-6 animate-[fadeIn_0.6s_ease-out]">
         {/* Progress Bar */}
-        <div className="mb-8">
-          <div className="flex justify-between mb-2">
-            <h2 className="font-semibold" style={{ color: theme.colors.primary }}>
-              Pergunta {currentQuestion + 1} de {theme.questions.length}
-            </h2>
-            <span style={{ color: theme.colors.secondary }}>{Math.round(progress)}%</span>
+        <div className="mb-4">
+          <div className="flex justify-between items-center mb-3">
+            <div className="flex items-center gap-2">
+              <span
+                className="inline-flex items-center justify-center rounded-full px-4 py-2 text-xs font-semibold tracking-[0.18em] uppercase"
+                style={{
+                  backgroundColor: `${theme.colors.accent}33`,
+                  color: theme.colors.accent,
+                  boxShadow: `0 8px 24px ${theme.colors.accent}40`,
+                }}
+              >
+                Quiz
+              </span>
+              <h2
+                className="text-2xl sm:text-3xl font-bold"
+                style={{ color: theme.colors.primary }}
+              >
+                Pergunta {currentQuestion + 1} / {theme.questions.length}
+              </h2>
+            </div>
+            <span className="text-lg font-semibold" style={{ color: theme.colors.secondary }}>
+              {Math.round(progress)}%
+            </span>
           </div>
-          <div className="h-2 rounded-full overflow-hidden" style={{ backgroundColor: `${theme.colors.primary}30` }}>
+          <div className="h-3 rounded-full overflow-hidden shadow-inner" style={{ backgroundColor: `${theme.colors.primary}25` }}>
             <div
-              className="h-full transition-all duration-300"
+              className="h-full transition-all duration-500"
               style={{
                 width: `${progress}%`,
                 backgroundColor: theme.colors.primary,
@@ -95,8 +112,11 @@ export default function QuizPage() {
         </div>
 
         {/* Question */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-bold mb-8" style={{ color: theme.colors.primary }}>
+        <div className="mb-10">
+          <h3
+            className="text-3xl sm:text-4xl font-black mb-6 leading-tight drop-shadow"
+            style={{ color: theme.colors.text }}
+          >
             {question.question}
           </h3>
 
@@ -107,11 +127,11 @@ export default function QuizPage() {
                 key={idx}
                 onClick={() => handleAnswerClick(idx)}
                 disabled={showFeedback}
-                className="w-full p-4 rounded-lg text-left font-medium transition-all duration-200 border-2"
+                className="w-full p-4 rounded-xl text-left font-semibold transition-all duration-300 border-2 hover:-translate-y-[2px] hover:shadow-lg"
                 style={{
                   borderColor: selectedAnswer === idx ? (isCorrect ? "#10b981" : "#ef4444") : theme.colors.accent,
                   backgroundColor:
-                    selectedAnswer === idx ? (isCorrect ? "#10b98130" : "#ef444430") : `${theme.colors.accent}20`,
+                    selectedAnswer === idx ? (isCorrect ? "#10b98135" : "#ef444435") : `${theme.colors.accent}15`,
                   color: theme.colors.text,
                   cursor: showFeedback ? "not-allowed" : "pointer",
                   opacity: showFeedback && selectedAnswer !== idx ? 0.5 : 1,
@@ -119,14 +139,14 @@ export default function QuizPage() {
               >
                 <div className="flex items-center gap-3">
                   <div
-                    className="w-5 h-5 rounded-full border-2 flex items-center justify-center"
+                    className="w-6 h-6 rounded-full border-2 flex items-center justify-center"
                     style={{
                       borderColor: selectedAnswer === idx ? (isCorrect ? "#10b981" : "#ef4444") : theme.colors.accent,
                     }}
                   >
                     {selectedAnswer === idx && (
                       <div
-                        className="w-3 h-3 rounded-full"
+                        className="w-3.5 h-3.5 rounded-full"
                         style={{
                           backgroundColor: isCorrect ? "#10b981" : "#ef4444",
                         }}
@@ -144,14 +164,14 @@ export default function QuizPage() {
         {/* Feedback */}
         {showFeedback && (
           <div
-            className="p-6 rounded-lg mb-8 border-2"
+            className="p-6 rounded-xl mb-8 border-2 animate-[fadeIn_0.4s_ease-out]"
             style={{
               borderColor: isCorrect ? "#10b981" : "#ef4444",
               backgroundColor: isCorrect ? "#10b98120" : "#ef444420",
             }}
           >
             <p
-              className="font-bold mb-2"
+              className="font-extrabold mb-2 text-lg"
               style={{
                 color: isCorrect ? "#10b981" : "#ef4444",
               }}
@@ -172,10 +192,11 @@ export default function QuizPage() {
         {showFeedback && (
           <Button
             onClick={handleNext}
-            className="w-full py-6 text-lg"
+            className="w-full py-6 text-lg font-semibold transition-transform duration-300 hover:-translate-y-[1px]"
             style={{
               backgroundColor: theme.colors.primary,
               color: theme.colors.background,
+              boxShadow: `0 15px 45px ${theme.colors.primary}55`,
             }}
           >
             {currentQuestion === theme.questions.length - 1 ? "Próximo Tema" : "Próxima Pergunta"}
