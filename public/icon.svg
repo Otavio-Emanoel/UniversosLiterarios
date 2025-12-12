@@ -1,26 +1,38 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    @media (prefers-color-scheme: light) {
-      .background { fill: black; }
-      .foreground { fill: white; }
-    }
-    @media (prefers-color-scheme: dark) {
-      .background { fill: white; }
-      .foreground { fill: black; }
-    }
-  </style>
-  <g clip-path="url(#clip0_7960_43945)">
-    <rect class="background" width="180" height="180" rx="37" />
-    <g style="transform: scale(95%); transform-origin: center">
-      <path class="foreground"
-        d="M101.141 53H136.632C151.023 53 162.689 64.6662 162.689 79.0573V112.904H148.112V79.0573C148.112 78.7105 148.098 78.3662 148.072 78.0251L112.581 112.898C112.701 112.902 112.821 112.904 112.941 112.904H148.112V126.672H112.941C98.5504 126.672 86.5638 114.891 86.5638 100.5V66.7434H101.141V100.5C101.141 101.15 101.191 101.792 101.289 102.422L137.56 66.7816C137.255 66.7563 136.945 66.7434 136.632 66.7434H101.141V53Z" />
-      <path class="foreground"
-        d="M65.2926 124.136L14 66.7372H34.6355L64.7495 100.436V66.7372H80.1365V118.47C80.1365 126.278 70.4953 129.958 65.2926 124.136Z" />
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+  aria-label="Atlas dos Mundos Literários">
+  <defs>
+    <linearGradient id="bg" x1="20" y1="10" x2="160" y2="170" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f172a" />
+      <stop offset="1" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="flare" x1="50" y1="40" x2="140" y2="130" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.8" />
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0.6" />
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="200" height="200" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0ea5e9" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <rect width="180" height="180" rx="32" fill="url(#bg)" />
+  <rect width="180" height="180" rx="32" fill="url(#flare)" opacity="0.35" />
+
+  <g filter="url(#shadow)" transform="translate(24 26)">
+    <!-- Livro estilizado -->
+    <path d="M18 22C18 14.268 24.268 8 32 8H70C77.732 8 84 14.268 84 22V88C84 95.732 77.732 102 70 102H32C24.268 102 18 95.732 18 88V22Z"
+      fill="rgba(255,255,255,0.06)" stroke="#e2e8f0" stroke-width="3" />
+    <path d="M46 20H54C59.523 20 64 24.477 64 30V88" stroke="#c084fc" stroke-width="3" />
+    <path d="M32 34H70" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+    <path d="M32 46H70" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round" opacity="0.7" />
+    <path d="M32 58H70" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+    <path d="M32 70H64" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+
+    <!-- Rosa dos ventos simplificada -->
+    <g transform="translate(96 18)">
+      <circle cx="21" cy="21" r="21" fill="rgba(255,255,255,0.08)" stroke="#a855f7" stroke-width="2" />
+      <path d="M21 2L24.5 17.5L39 21L24.5 24.5L21 40L17.5 24.5L2 21L17.5 17.5L21 2Z" fill="#fbbf24" stroke="#f59e0b"
+        stroke-width="1.8" />
+      <circle cx="21" cy="21" r="3" fill="#0ea5e9" />
     </g>
   </g>
-  <defs>
-    <clipPath id="clip0_7960_43945">
-      <rect width="180" height="180" fill="white" />
-    </clipPath>
-  </defs>
 </svg>
